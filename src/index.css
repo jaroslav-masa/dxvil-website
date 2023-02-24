@@ -10,13 +10,12 @@
 }
 
 :root{
+  --borderColor: #e03535;
+  --boxText: #0c0101;
+
   font-family: valorax, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,10 +23,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --borderColor: #e03535;
-  --boxText: #0c0101;
-  color: #e03535 !important;
-  border-color: #e03535 !important;
+  color: #e03535;
+  border-color: #e03535;
   background-color: #0c0101;
 }
 
@@ -42,11 +39,6 @@ body {
   font-family: valorax, system-ui;
 }
 
-.futureBox:hover {
-  background-color: #e03535;
-  color: #111 !important;
-}
-
 .futureBox {
   border: solid 2px;
   text-align: center;
@@ -59,6 +51,14 @@ body {
   clip-path: polygon(9.5% 0, 100% 0, 100% 100%, 0 100%, 0 32.5%);
 }
 
+.futureBox:hover,.futureBox:hover::before{
+  background-color: #e03535;
+  color: #111 !important;
+
+  transition: color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
+
 .futureBox::before {
   border: 2px solid;
   content: "";
@@ -67,11 +67,17 @@ body {
   height: 45.5px;
   top: -50%;
   left: -25%;
+  background: var(--borderColor);
   transform: rotate(45deg);
 }
 
+.futureBox::before, .futureBox {
+  transition: color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
 
 .noStyle{
   text-decoration: none !important;
   color: var(--borderColor) !important;
 }
+

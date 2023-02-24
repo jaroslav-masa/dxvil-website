@@ -5,7 +5,7 @@ import React from 'react'
 const Feed = () => {
   return (
     <Stack sx={{display: "grid", textAlign: "center", placeItems: "center", height: "100vh"}} className="bigText">
-      <Box sx={{fontSize: "5rem"}}>
+      <Box sx={{fontSize: "4.5rem"}}>
         Meet the future
       </Box>
     </Stack>

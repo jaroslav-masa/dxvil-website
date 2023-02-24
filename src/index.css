@@ -3,6 +3,12 @@
   src: url("assets/Valorax.otf");
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 :root{
   font-family: valorax, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -17,6 +23,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --borderColor: #e03535;
+  --boxText: #0c0101;
+  color: #e03535 !important;
+  border-color: #e03535 !important;
+  background-color: #0c0101;
 }
 
 body {
@@ -30,59 +42,13 @@ body {
   font-family: valorax, system-ui;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --borderColor: #0c0101;
-    --boxText: #e03535;
-    color: #0c0101 !important;
-    border-color: #0c0101 !important;
-    background-color: #e03535;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-  
-  .futureBox::before {
-    border: 2px solid;
-  }
-  
-  .futureBox{
-    border: solid 2px;
-  }
-
-  .futureBox:hover {
-    background-color: #111;
-    color: #e03535 !important;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --borderColor: #e03535;
-    --boxText: #0c0101;
-    color: #e03535 !important;
-    border-color: #e03535 !important;
-    background-color: #0c0101;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-
-  .futureBox::before {
-    border: 2px solid;
-  }
-  
-  .futureBox{
-    border: solid 2px;
-  }
-
-  .futureBox:hover {
-    background-color: #e03535;
-    color: #111 !important;
-  }
+.futureBox:hover {
+  background-color: #e03535;
+  color: #111 !important;
 }
 
 .futureBox {
+  border: solid 2px;
   text-align: center;
   display: grid;
   place-items: center;
@@ -94,6 +60,7 @@ body {
 }
 
 .futureBox::before {
+  border: 2px solid;
   content: "";
   position: absolute;
   width: 45.5px;
@@ -102,6 +69,7 @@ body {
   left: -25%;
   transform: rotate(45deg);
 }
+
 
 .noStyle{
   text-decoration: none !important;

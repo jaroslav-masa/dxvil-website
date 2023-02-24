@@ -1,11 +1,11 @@
 import { Stack } from '@mui/system'
-import { NavBar, Feed } from './components'
+import { NavBar, Feed} from './components'
 
 function App() {
   return (
-    <Stack>
+    <Stack display={"flex"}>
       <NavBar/>
-      <Feed/>
+      <Feed sx={{alignContent: "center"}}/>
     </Stack>
   )
 }

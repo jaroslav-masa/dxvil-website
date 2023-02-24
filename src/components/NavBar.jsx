@@ -8,7 +8,7 @@ const NavBar = () => {
   const discord = "https://discord.gg/5WxWZcrSWW";
 
   return (
-    <Stack sx={{display: "flex", padding: 3, flexDirection: "row", alignItems: "center", justifyContent: "space-between"}}>
+    <Stack sx={{display: "flex", position: "fixed", width: "97%", padding: 3, flexDirection: {sx: "col", md: "row"}, alignItems: "center", justifyContent: {md: "space-between", sx: "center"}}}>
       <Typography variant="h2" sx={{fontFamily: "valorax"}}>
         dxvil
       </Typography>

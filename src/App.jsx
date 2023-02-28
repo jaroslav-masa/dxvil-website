@@ -1,11 +1,13 @@
 import { Stack } from '@mui/system'
-import { NavBar, Feed} from './components'
+import { NavBar, Feed, CursorEffect, Footer} from './components'
 
 function App() {
   return (
-    <Stack display={"flex"}>
-      <NavBar/>
-      <Feed sx={{alignContent: "center"}}/>
+    <Stack>
+        <CursorEffect/>
+        <NavBar/>
+        <Feed sx={{alignContent: "center"}}/>
+        
     </Stack>
   )
 }

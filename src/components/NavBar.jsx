@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <Stack sx={{display: "flex", position: "relative", width: "95vw", alignSelf: "center", padding: 3, flexDirection: {sx: "col", md: "row"}, alignItems: "center", justifyContent: {md: "space-between", sx: "center"}}}>
-      <Typography variant="h2" sx={{fontFamily: "valorax"}}>
+      <Typography variant="h2" sx={{fontFamily: "valorax"}} className="below">
         dXvil
       </Typography>
       <Box sx={{display: "flex", direction: "row", gap: "2vw", flexWrap: "wrap", justifyContent: "center"}}>

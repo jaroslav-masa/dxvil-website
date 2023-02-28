@@ -29,7 +29,7 @@
 }
 
 body {
- 
+  
   font-family: valorax, system-ui;
   margin: 0;
   min-width: 320px;
@@ -39,13 +39,14 @@ body {
 
 *{
   font-family: valorax, system-ui;
-  
+  cursor: none !important;
 }
 
 .futureBox {
   border: solid 2px;
   text-align: center;
   display: grid;
+  
   place-items: center;
   width: calc(700px/4);
   height: calc(200px/4);
@@ -57,7 +58,8 @@ body {
 .futureBox:hover,.futureBox:hover::before{
   background-color: #e03535;
   color: #111 !important;
-
+  border-color: #e03535;
+  
   transition: color 0.25s linear;
   transition: background-color 0.25s linear;
 }
@@ -138,4 +140,24 @@ body {
 
 .contactImage{
   background-image: url('./assets/contactImage.jpg');
+}
+
+.mouseCircle{
+  background: #e03535;
+  mix-blend-mode: difference;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  transform: translate3d(-50%,-50%,0);
+  transition: transform 0.2s cubic-bezier(.02,1.23,.79,1.08);
+}
+
+.below {
+  z-index: -2;
+}
+
+a{
+  mix-blend-mode: difference;
 }

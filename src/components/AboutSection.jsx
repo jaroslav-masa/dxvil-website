@@ -9,8 +9,7 @@ const AboutSection = () => {
     </Box>
     */
     return (
-    <Box sx={{display: "flex"}}>
-        <Box sx={{display: 'flex', width: "60%", flexDirection: "column", gap: 4, padding: 6, marginLeft: "auto"}}>
+        <Box sx={{display: 'flex', width: "60%", flexDirection: "column", gap: 4, padding: 6, marginLeft: "auto"}} className="below">
             <Typography variant='h3' fontFamily={"valorax"} className="title">
                 abOut ----------------------------
             </Typography>
@@ -32,7 +31,7 @@ const AboutSection = () => {
                 </Box>
             </Box>
         </Box>
-    </Box>
+
   )
 }
 

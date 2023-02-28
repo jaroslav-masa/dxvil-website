@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <Stack>
-        <Divider sx={{border: "1px #e03535 solid", marginY: 2}}/>
+        <Divider sx={{border: "1px #e03535 solid", marginY: 2}} className="below"/>
         <Box sx={{display: "flex", flexDirection: "row", padding: 2,  justifyContent:"space-between", flexWrap: "wrap"}} className="footerContent">
             <Box sx={{display: "flex", justifyContent: 'space-between', gap: 10}}>
                 <Link className="noStyle" href='mailto:musicbyblakk@gmail.com'>
@@ -29,7 +29,7 @@ const Footer = () => {
                     </Typography>
                 </Link>
             </Box>
-            <Box>
+            <Box className="below">
                 Copyright {new Date().getFullYear()} - Jaroslav Masa
             </Box>
         </Box>

@@ -161,3 +161,19 @@ body {
 a{
   mix-blend-mode: difference;
 }
+
+@keyframes slowFadeLoopAnimation {
+  0% {
+    opacity: 0.1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.1;
+  }
+}
+
+.slowFadeLoop{
+  animation: infinite slowFadeLoopAnimation 2s;
+}

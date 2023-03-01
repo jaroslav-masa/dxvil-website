@@ -1,4 +1,3 @@
-import { Box, Typography } from '@mui/material'
 import { Stack } from '@mui/system'
 import React from 'react'
 import { BigTitle, AboutSection, ContactSection, Footer } from '.'

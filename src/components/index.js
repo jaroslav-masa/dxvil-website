@@ -5,3 +5,4 @@ export { default as AboutSection } from './AboutSection';
 export { default as ContactSection } from './ContactSection';
 export { default as CursorEffect } from './CursorEffect';
 export { default as Footer } from './Footer';
+export { default as InitComponent } from './InitComponent';

@@ -1,5 +1,5 @@
 import { Stack } from '@mui/system'
-import { NavBar, Feed, CursorEffect, Footer} from './components'
+import { NavBar, Feed, CursorEffect } from './components'
 
 function App() {
   return (

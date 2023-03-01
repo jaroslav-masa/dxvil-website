@@ -1,6 +1,6 @@
 @font-face {
   font-family: valorax;
-  src: url("assets/Valorax.otf");
+  src: url("assets/fonts/Valorax.otf");
 }
 
 #root {
@@ -135,11 +135,11 @@ body {
 }
 
 .aboutImage{
-  background-image: url('./assets/aboutImage.jpg');
+  background-image: url('./assets/images/aboutImage.jpg');
 }
 
 .contactImage{
-  background-image: url('./assets/contactImage.jpg');
+  background-image: url('./assets/images/contactImage.jpg');
 }
 
 .mouseCircle{

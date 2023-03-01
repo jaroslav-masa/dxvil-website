@@ -58,7 +58,7 @@ const ContactSection = () => {
                       Project initialized:
                   </Typography>
                   <Typography variant='h5' fontFamily={"valorax"}>
-                      10%
+                      50%
                   </Typography>
                 </Box>
                 <Box sx={{display: "flex", justifyContent: 'space-between'}}>

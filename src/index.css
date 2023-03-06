@@ -177,3 +177,10 @@ a{
 .slowFadeLoop{
   animation: infinite slowFadeLoopAnimation 2s;
 }
+
+#mouse {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: "height 0.3s ease-in-out";
+  transition: "width 0.3s ease-in-out";
+}

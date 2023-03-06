@@ -1,13 +1,13 @@
 import React from 'react'
-import spotifyAPI from '../utils/spotifyAPIRequest'
+//import spotifyAPI from '../utils/spotifyAPIRequest.js'
 
 
 const TrackList = () => {
-    useEffect(() => {
+    /*useEffect(() => {
         spotifyAPI.then(data => {
             
         })
-    })
+    })*/
     return (
         <div>TrackList</div>
     )

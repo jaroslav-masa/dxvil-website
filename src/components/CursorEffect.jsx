@@ -13,7 +13,7 @@ const CursorEffect = () => {
 
     //const circle = document.getElementsByClassName("mouseCircle")[0];
     return (
-        <div className="mouseCircle" style={{top: `${mousePos.y}px`, left: `${mousePos.x}px`}}></div>
+        <div className="mouseCircle" id="mouse" style={{top: `${mousePos.y}px`, left: `${mousePos.x}px`}}></div>
     )
     
 }
